@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "careers/new"
+  resources :careers
   
   match '/addcareer',  to: 'careers#new',            via: 'get'
   root  'static_pages#home'
